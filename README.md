@@ -1,2 +1,6 @@
-# javascript-demo
-https://prod.liveshare.vsengsaas.visualstudio.com/join?92CA7C09423F782FDFEF9F9E0D2F72665A6B
+# Assessment
+
+1. Create a simple one page website.
+2. It should have a css stylesheet linked to it.
+3. You should include a very simple javascript interaction.
+    E.g user clicks on button and changes th colour. 

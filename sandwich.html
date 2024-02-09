@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+        <button onclick="makeSandwich('Bacon, Lettuce and Tomato')" >Make BLT</button>
+        <button onclick="makeSandwich('Hasm and cheese')">Make Ham and Cheese</button>
+        <div id="output"></div>
+    </div>
+
+    <div class="flex-container">
+        <div class="smallbox">FLEX ITEM</div>
+        <div class="smallbox">FLEX ITEM</div>
+    </div>
+
+    <script>
+        //create variable to store the output element
+        var output = document.querySelector("#output");
+        
+        function makeSandwich(ingredients){
+            output.innerHTML = 'The sandwich has following ingredients: ' + ingredients;
+        }
+
+    </script>
+</body>
+</html>

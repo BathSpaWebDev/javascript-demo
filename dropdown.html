@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="toggleClass()">Open dropdown</button>
+    <div class="dropdown">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </div>
+    <script>
+        const dropdown = document.querySelector(".dropdown")
+        function toggleClass(){
+            if(!dropdown.classList.includes("active")){
+                dropdown.classList.add("active");
+            } else {
+                dropdown.classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>

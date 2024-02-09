@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="box">
-        <p>Click me</p>
+        Click me
     </div>
+
+    <script>
+        /*
+         1. select the html element we want to click (.box) and store in a variable
+         2. create a function that changes the colour of the box
+         3. add event listener to the box, that run s the function we created when box is clicked
+        */
+       var box = document.querySelector(".box"); 
+       console.log('BOX: ', box);
+
+       function changeColour(){
+            box.style.backgroundColor = 'blue';
+       }
+    
+
+       box.addEventListener('click', changeColour );
+
+    </script>
 </body>
 </html>
